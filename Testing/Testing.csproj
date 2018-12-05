@@ -48,6 +48,7 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -75,10 +76,85 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FormBrigades.aspx" />
+    <Content Include="FormLogInAdmin.aspx" />
+    <Content Include="FormLogInTeacher.aspx" />
+    <Content Include="FormLogInTest.aspx" />
+    <Content Include="FormProfiles.aspx" />
+    <Content Include="FormTeacher.aspx" />
+    <Content Include="FormTest.aspx" />
+    <Content Include="FromChangePassword.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Brigades.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="Errors.cs" />
+    <Compile Include="FormBrigades.aspx.cs">
+      <DependentUpon>FormBrigades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormBrigades.aspx.designer.cs">
+      <DependentUpon>FormBrigades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogInAdmin.aspx.cs">
+      <DependentUpon>FormLogInAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormLogInAdmin.aspx.designer.cs">
+      <DependentUpon>FormLogInAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogInTeacher.aspx.cs">
+      <DependentUpon>FormLogInTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormLogInTeacher.aspx.designer.cs">
+      <DependentUpon>FormLogInTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogInTest.aspx.cs">
+      <DependentUpon>FormLogInTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormLogInTest.aspx.designer.cs">
+      <DependentUpon>FormLogInTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormProfiles.aspx.cs">
+      <DependentUpon>FormProfiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormProfiles.aspx.designer.cs">
+      <DependentUpon>FormProfiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormTeacher.aspx.cs">
+      <DependentUpon>FormTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormTeacher.aspx.designer.cs">
+      <DependentUpon>FormTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormTest.aspx.cs">
+      <DependentUpon>FormTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormTest.aspx.designer.cs">
+      <DependentUpon>FormTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FromChangePassword.aspx.cs">
+      <DependentUpon>FromChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FromChangePassword.aspx.designer.cs">
+      <DependentUpon>FromChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profiles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Questions.cs" />
+    <Compile Include="Reports.cs" />
+    <Compile Include="Results.cs" />
+    <Compile Include="Themes.cs" />
+    <Compile Include="UserInterface.cs" />
+    <Compile Include="Users.cs" />
+    <Compile Include="Workers.cs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

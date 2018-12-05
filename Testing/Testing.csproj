@@ -81,6 +81,7 @@
     <Content Include="FormLogInTeacher.aspx" />
     <Content Include="FormLogInTest.aspx" />
     <Content Include="FormProfiles.aspx" />
+    <Content Include="FormReports.aspx" />
     <Content Include="FormTeacher.aspx" />
     <Content Include="FormTest.aspx" />
     <Content Include="FromChangePassword.aspx" />
@@ -125,6 +126,13 @@
     <Compile Include="FormProfiles.aspx.designer.cs">
       <DependentUpon>FormProfiles.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FormReports.aspx.cs">
+      <DependentUpon>FormReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormReports.aspx.designer.cs">
+      <DependentUpon>FormReports.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FormTeacher.aspx.cs">
       <DependentUpon>FormTeacher.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -152,6 +160,7 @@
     <Compile Include="Reports.cs" />
     <Compile Include="Results.cs" />
     <Compile Include="Themes.cs" />
+    <Compile Include="ToDoList.cs" />
     <Compile Include="UserInterface.cs" />
     <Compile Include="Users.cs" />
     <Compile Include="Workers.cs" />

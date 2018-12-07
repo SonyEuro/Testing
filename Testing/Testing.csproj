@@ -77,19 +77,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FormBrigades.aspx" />
+    <Content Include="FormDepartaments.aspx" />
     <Content Include="FormLogInAdmin.aspx" />
     <Content Include="FormLogInTeacher.aspx" />
     <Content Include="FormLogInTest.aspx" />
     <Content Include="FormProfiles.aspx" />
+    <Content Include="FormQuestionEditor.aspx" />
     <Content Include="FormReports.aspx" />
     <Content Include="FormTeacher.aspx" />
     <Content Include="FormTest.aspx" />
+    <Content Include="FormThemes.aspx" />
     <Content Include="FromChangePassword.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Brigades.cs" />
     <Compile Include="DataBase.cs" />
+    <Compile Include="DB.cs" />
     <Compile Include="Errors.cs" />
     <Compile Include="FormBrigades.aspx.cs">
       <DependentUpon>FormBrigades.aspx</DependentUpon>
@@ -97,6 +101,13 @@
     </Compile>
     <Compile Include="FormBrigades.aspx.designer.cs">
       <DependentUpon>FormBrigades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormDepartaments.aspx.cs">
+      <DependentUpon>FormDepartaments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormDepartaments.aspx.designer.cs">
+      <DependentUpon>FormDepartaments.aspx</DependentUpon>
     </Compile>
     <Compile Include="FormLogInAdmin.aspx.cs">
       <DependentUpon>FormLogInAdmin.aspx</DependentUpon>
@@ -126,6 +137,13 @@
     <Compile Include="FormProfiles.aspx.designer.cs">
       <DependentUpon>FormProfiles.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FormQuestionEditor.aspx.cs">
+      <DependentUpon>FormQuestionEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormQuestionEditor.aspx.designer.cs">
+      <DependentUpon>FormQuestionEditor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FormReports.aspx.cs">
       <DependentUpon>FormReports.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -146,6 +164,13 @@
     </Compile>
     <Compile Include="FormTest.aspx.designer.cs">
       <DependentUpon>FormTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormThemes.aspx.cs">
+      <DependentUpon>FormThemes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormThemes.aspx.designer.cs">
+      <DependentUpon>FormThemes.aspx</DependentUpon>
     </Compile>
     <Compile Include="FromChangePassword.aspx.cs">
       <DependentUpon>FromChangePassword.aspx</DependentUpon>

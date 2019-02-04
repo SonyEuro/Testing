@@ -14,15 +14,15 @@
                 <asp:Label ID="Label3" runat="server" Text="Вход для преподавателя"></asp:Label>
             </div>
             <asp:Label ID="Label2" runat="server" Text="Логин"></asp:Label>
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:TextBox ID="tbLogin" runat="server"></asp:TextBox>
         </div>
 
         <div>
             <asp:Label ID="Label1" runat="server" Text="Пароль"></asp:Label>
-            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            <asp:TextBox ID="tbPassword" runat="server"></asp:TextBox>
         </div>
         <div>
-            <asp:Button ID="Button1" runat="server" Text="Войти" />
+            <asp:Button ID="btnEnter" runat="server" Text="Войти" OnClick="btnEnter_Click" />
         </div>
     </form>
 </body>

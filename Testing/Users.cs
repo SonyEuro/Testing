@@ -6,11 +6,12 @@ namespace TestComplex
 {
 	public class Users
 	{
-		int id;
-		string Name;
-		string Password;
+        public int id;
+        public string Name;
+        public string Password;
+        public string Login;
 
-		public void Add()
+        public void Add()
 		{
 			
 		}
@@ -30,19 +31,26 @@ namespace TestComplex
 			
 		}
 
-		public Users()
-		{
-			
-		}
-
-		public void LogIn()
-		{
-			
-		}
+        public Users(string login, string password)
+        {
+            Login = login;
+            Password = password;
+            id = -1;
+        }
 
 		public void ChangePassword()
 		{
 			
 		}
-	}
+
+        /// <summary>
+        /// Атентификация
+        /// </summary>
+        /// <returns></returns>
+        public bool LogIn()
+        {//TODO: придумать как сделать доступ к БД
+            //return UserInterface.Base.CheckLogin(this);
+            return false;
+        }
+    }
 }

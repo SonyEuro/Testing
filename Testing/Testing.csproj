@@ -92,8 +92,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Brigades.cs" />
+    <Compile Include="dbold.cs" />
     <Compile Include="DataBase.cs" />
-    <Compile Include="DB.cs" />
     <Compile Include="Errors.cs" />
     <Compile Include="FormBrigades.aspx.cs">
       <DependentUpon>FormBrigades.aspx</DependentUpon>

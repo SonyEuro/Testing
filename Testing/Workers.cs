@@ -13,7 +13,7 @@ namespace TestComplex
 		DateTime DayOfBirth;
 		DateTime DayOfPosition;
 
-		public Workers()
+		public Workers(string Login,string Password) : base(Login, Password)
 		{
 			
 		}
